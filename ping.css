@@ -1,0 +1,198 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+body{
+    color:  hsl(0, 0%, 59%);
+    font-size: 20px;
+    font-family: "Libre Franklin";
+}
+.main{
+    text-align: center;
+}
+.logo{
+    margin: 100px auto 50px;
+    width: 60px;
+    height: 40px;
+    display: grid;
+    place-content: center;
+}
+.logo img{
+    width: 100%;
+}
+
+.head{
+    margin-bottom: 40px;
+    font-size: 20px;
+    font-weight: 300;
+}
+
+.head span{
+    color: hsl(209, 33%, 12%);
+}
+
+.text{
+    color: hsl(209, 33%, 12%);
+    font-weight: 200;
+    margin-bottom: 50px;
+    font-size: 13px;
+}
+
+.label{
+    display: block;
+    width: 80%;
+    margin: 0 auto 10px;
+    
+}
+
+.label.active #mail{
+    border: 2px solid hsl(223, 87%, 63%);
+}
+
+.label.errors #mail{
+    border: 2px solid hsl(354, 100%, 66%);
+}
+#mail{
+    width: 100%;
+    padding: 13px;
+    border: 2px solid hsl(223, 100%, 88%);
+    border-radius: 25px;
+    color: hsl(223, 100%, 88%);
+    font-size: 15px;
+}
+
+#mail:focus{
+    outline: 0;
+    color: black;
+}
+
+.error{
+    width: 100%;
+    text-align: left;
+    font-size: 12px;
+    margin: 5px 0 15px;
+    color: hsl(354, 100%, 66%);
+    padding-left: 18px;
+}
+.btn{
+    background-color: hsl(223, 87%, 63%);
+    border-radius: 25px;
+    color: white;
+    text-transform: capitalize;
+    text-align: center;
+    margin-bottom: 100px;
+    width: 80%;
+    padding: 13px;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.btn:hover{
+background-color: #7195f5;
+}
+
+.stats{
+    width: 80%;
+    margin: 0 auto 100px;
+}
+
+.stats img{
+    width: 100%;
+}
+
+.link{
+    display: flex;
+    flex-flow: row nowrap;
+    gap: 20px;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 30px;
+    color: hsl(223, 87%, 63%);
+}
+
+.link div{
+    border: 1px solid hsl(223, 100%, 88%);
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items:  center;
+    justify-content: center;
+}
+
+.link div:hover{
+    background-color: hsl(223, 87%, 63%);
+    color: white;
+}
+
+.copy{
+    width: 100%;
+    font-size: 13px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+}
+.attribution a {
+    color: hsl(223, 87%, 63%); 
+}
+
+@media (min-width: 700px) {
+    .main{
+        width: 60%;
+        margin: 0 auto;
+    }
+    .logo{
+        width: 150px;
+        height: 150px;
+        margin: 80px auto 0px;
+    }
+    .logo img{
+        width: 100%;
+    }
+    .head{
+    font-size: 42px; 
+    margin-bottom: 10px;
+    }
+    .head span{
+    font-weight: 700;
+    }
+    .text{
+    font-size: 18px;
+    font-weight: 300;
+        margin-top: 20px;
+    }
+    .form{
+        width: 80%;
+        margin: 0 auto;
+        display: flex;
+        flex-flow: row nowrap;
+        gap: 5%;
+        margin-bottom: 50px;
+    }
+
+    #mail{
+        flex-basis: 65%;
+        margin-bottom: 10px;
+        padding: 18px;
+        border-radius: 50px;
+    }
+    .error{
+    font-size: 14px;
+    }
+    .btn{
+        padding: 18px;
+        flex-basis: 30%;
+        margin-bottom: 0;
+        border-radius: 50px;
+        align-self: start;
+    }
+}

@@ -1,4 +1,4 @@
-let input = document.querySelector("#mail");
+let input = document.querySelector(".mail");
 
 let error = document.querySelector(".error")
 let form = document.querySelector(".form");

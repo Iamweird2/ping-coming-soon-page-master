@@ -8,21 +8,18 @@ form.addEventListener("submit", (e)=>{
     validateEmail();
 })
 
-function validateEmail(){
+function validateEmail() {
+
     let inputValue = input.value.trim();
-    if(inputValue === ""){
-        setError(error, "Email cannot be empty");
-    }else if(inputValue.indexOf("@") < 1){
+    let filter = /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+
+    if (!filter.test(inputValue)) {
         setError(error, "Please provide a valid email address");
-    }else if(inputValue.indexOf(".") <= inputValue.indexOf("@") + 2){
-        setError(error, "Please provide a valid email address");
-    }else if(inputValue.indexOf(".") === inputValue.lenght-1){
-        setError(error, "Please provide a valid email address")
+        inputValue.focus;
     }else{
         setSuccess(error);
     }
 }
-
 function setError(element, message){
     let holder = element.parentElement;
     let errorHold = holder.querySelector(".error");

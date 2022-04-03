@@ -5,7 +5,7 @@
     box-sizing: border-box;
 }
 
-body{
+.body{
     color:  hsl(0, 0%, 59%);
     font-size: 20px;
     font-family: "Libre Franklin";
@@ -20,7 +20,7 @@ body{
     display: grid;
     place-content: center;
 }
-.logo img{
+.logo-img{
     width: 100%;
 }
 
@@ -144,10 +144,9 @@ body{
 .attribution a {
     color: hsl(223, 87%, 63%); 
 }
-
-@media (min-width: 700px) {
+@media (min-width: 650px){
     .main{
-        width: 60%;
+        width: 80%;
         margin: 0 auto;
     }
     .logo{
@@ -155,14 +154,14 @@ body{
         height: 150px;
         margin: 80px auto 0px;
     }
-    .logo img{
+    .logo-img{
         width: 100%;
     }
     .head{
     font-size: 42px; 
     margin-bottom: 10px;
     }
-    .head span{
+    .head-span{
     font-weight: 700;
     }
     .text{
@@ -179,7 +178,7 @@ body{
         margin-bottom: 50px;
     }
 
-    #mail{
+    .mail{
         flex-basis: 65%;
         margin-bottom: 10px;
         padding: 18px;
@@ -195,4 +194,11 @@ body{
         border-radius: 50px;
         align-self: start;
     }
+
+}
+@media (min-width: 865px) {
+    .main{
+        width: 60%;
+    }
+    
 }
